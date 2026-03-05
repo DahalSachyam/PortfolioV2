@@ -1,5 +1,5 @@
 import { userAbout, userLocation, userGithub, userLinkedin, userEmail } from "../data";
-
+import myPhoto from "../assets/myyyphoto.png";
 function SocialLink({ href, children, label }) {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}
@@ -22,7 +22,7 @@ export default function About() {
         <div className="grid md:grid-cols-5 gap-10 items-center mt-12">
         <div className="md:col-span-2 flex justify-center overflow-hidden rounded-2xl">
         <img
-            src="src/assets/myyyphoto.png"
+            src={myPhoto}
             alt="Your Photo"
             className="w-full h-full object-cover rounded-2xl transition-transform duration-500 hover:scale-110"
         />
